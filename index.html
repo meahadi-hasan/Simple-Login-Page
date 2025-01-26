@@ -3,17 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portal Login</title>
+    <title>Login and Create Account</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    <div class="login-container">
-        <h1>Student Portal</h1>
-        <form id="loginForm">
-            <input type="text" placeholder="Username" id="username" required>
-            <input type="password" placeholder="Password" id="password" required>
-            <button type="submit">Login</button>
-        </form>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="form-container active" id="loginContainer">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p id="login-error-message" class="error-message"></p>
+            <p>Don't have an account? <a href="#" id="showRegister">Create Account</a></p>
+        </div>
+
+        <!-- Register Form -->
+        <div class="form-container" id="registerContainer">
+            <h2>Create Account</h2>
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="newUsername">Username</label>
+                    <input type="text" id="newUsername" name="newUsername" required>
+                </div>
+                <div class="input-group">
+                    <label for="newPassword">Password</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+            <p id="register-error-message" class="error-message"></p>
+            <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
