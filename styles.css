@@ -7,7 +7,6 @@ body {
             height: 100vh;
             margin: 0;
         }
-
         .container {
             background-color: #fff;
             padding: 20px;
@@ -16,29 +15,23 @@ body {
             width: 300px;
             text-align: center;
         }
-
         .form-container {
             display: none;
         }
-
         .form-container.active {
             display: block;
         }
-
         h2 {
             margin-bottom: 20px;
         }
-
         .input-group {
             margin-bottom: 15px;
             text-align: left;
         }
-
         label {
             display: block;
             margin-bottom: 5px;
         }
-
         input {
             width: 100%;
             padding: 8px;
@@ -46,7 +39,6 @@ body {
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-
         button {
             width: 100%;
             padding: 10px;
@@ -56,22 +48,18 @@ body {
             border-radius: 4px;
             cursor: pointer;
         }
-
         button:hover {
             background-color: #218838;
         }
-
         .error-message {
             color: red;
             margin-top: 10px;
         }
-
         a {
             color: #007bff;
             text-decoration: none;
             cursor: pointer;
         }
-
         a:hover {
             text-decoration: underline;
         }
